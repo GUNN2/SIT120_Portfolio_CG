@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+    <div id="app1" >
+        <p v-if="Math.random() < 0.3"> YOU WIN!!</p>
+        <p v-else> {{ message }} </p>
+
+        <p v-show="true"> And {{message}} again</p>
+
+            
+    </div>
+
+    <div id="app2">
+        <h1 v-for="x in types">
+            {{ x.type }}
+        </h1>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

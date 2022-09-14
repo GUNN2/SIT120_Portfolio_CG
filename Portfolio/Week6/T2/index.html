@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        div {
+            color: royalblue;
+        }
+        body {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+
+        <input type="checkbox" id="checkbox" value="display" v-model="checked">
+        <label for="checkbox">Finshed</label>
+
+        <p> What does it need to be marked with</p>
+        <input type="checkbox" id="Urgent" value="Urgent" v-model="checkedPriority">
+        <label for="Urgent">Urgent</label>
+        <input type="checkbox" id="Work Related" value="Work Related" v-model="checkedPriority">
+        <label for="Work Related">Work Related</label>
+        <input type="checkbox" id="Job Related" value="Job Related" v-model="checkedPriority">
+        <label for="Job Related">Job Related</label>
+        <input type="checkbox" id="Free Time" value="Free Time" v-model="checkedPriority">
+        <label for="Free Time">Free Time</label>
+        <br>
+        <p>Checked names: {{ checkedPriority }}</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
